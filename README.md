@@ -1,0 +1,1 @@
+# 2021_NOV_portfolio
