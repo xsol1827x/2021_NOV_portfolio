@@ -1,0 +1,349 @@
+.text{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*web display*/
+.intro{
+    background-color: #3B7F8E;
+    padding-bottom: 50px;
+}
+
+.greet{
+    border: aliceblue 2px solid;
+    border-radius: 25px;
+    width: fit-content;
+    padding: 10px;
+    display: inline-flex;
+    animation: animation 1s infinite alternate;
+    margin-top: 300px;
+    font-weight:bolder;
+    color: aliceblue;
+    text-shadow: 3px 3px #029eb3;
+    box-shadow: 3px 3px #029eb3;
+}
+
+.logo img{
+    height: 150px;
+    width: 200px;
+    margin: 0;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.name{
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.nameBold{
+    text-shadow: 3px 3px #029eb3;
+    font-size: 1.8rem;
+}
+
+
+.about{
+    margin-top: 50px;
+}
+
+.about h3{
+    margin: 0;
+    padding: 0;
+}
+
+.about img{
+    height: 150px;
+    width: 150px;
+}
+
+.about p{
+    font-weight: bold;
+    width: 40%;
+    text-align: center;
+    display: inline-flex;
+}
+
+.contact{
+    margin-top: 80px;
+}
+
+.contact h4{
+    padding: 0;
+    margin: 0;
+}
+
+.contactIcons {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.contactIcons li{
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem;
+}
+
+.contactIcons li a{
+    text-decoration: none;
+    color: black;
+}
+
+.show::before{
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.show{
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+
+.contactIcons svg:hover{
+    cursor: pointer;
+}
+
+.contactIcons svg:hover + .show{
+    visibility: visible;
+    font-weight: bold;
+    background-color: rgb(253, 253, 65);
+    border-radius: 25px;
+}
+
+/*Animations*/
+@keyframes animation{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-10px);}
+}
+
+.skillContainer{
+    margin-bottom: 100px;
+}
+
+.skillContainer h3{
+    background-color: rgb(253, 253, 65);
+    border-radius: 25px;
+}
+
+.skills{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.skills ul{
+    margin: 0;
+    padding: 0;
+}
+
+.skills li{
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.skills h3{
+    padding: 0;
+    margin: 0;
+}
+
+.skills li svg{
+    margin: 0;
+    padding: 0;
+    color:  #029eb3;
+}
+
+/*projects*/
+.projects{
+    margin-bottom: 50px;
+}
+
+.projects h2{
+    margin-bottom: 50px;
+}
+
+.projects ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+}
+
+.projects li{
+    margin: 0;
+    padding: 0;
+}
+
+.inner{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.inner img{
+    height: 300px;
+    width: 450px;
+    border-radius: 25px;
+}
+
+.link{
+    text-decoration: none;
+    color: #029eb3;
+    background-color: rgb(253, 253, 65);
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.innerText{
+    width: 30%;
+    font-weight: bold;
+}
+
+.tags{
+    background-color: rgb(253, 253, 65);
+    color: #029eb3;
+    border-radius: 25px;
+    width: fit-content;
+    justify-content: center;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
+
+.viewMore{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.viewMore a{
+    text-decoration: none;
+}
+
+/*mobile display*/
+@media only screen and (min-width: 360px) and (max-width:720px) {
+    .greet{
+        border: aliceblue 2px solid;
+        border-radius: 25px;
+        width: fit-content;
+        padding: 10px;
+        display: inline-flex;
+        animation: animation 1s infinite alternate;
+        margin-top: 200px;
+        font-weight:bolder;
+        color: aliceblue;
+        text-shadow: 3px 3px #029eb3;
+        box-shadow: 3px 3px #029eb3;
+    }
+
+    .intro{
+        width: 100%;
+    }
+
+    .about img{
+        height: 150px;
+        width: 150px;
+    }
+
+    .about p{
+        font-weight: bold;
+        width: 80%;
+        text-align: center;
+        display: inline-flex;
+    }
+
+    .contact h4{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .contactIcons {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 5px;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .skills{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .projects ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: column;
+        gap: 50px;
+    }
+
+    .inner{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 35px;
+        flex-wrap: wrap;
+    }
+    
+    .inner img{
+        height: 200px;
+        width: 300px;
+        border-radius: 25px;
+    }
+
+    .innerText{
+        width: 100%;
+        font-weight: bold;
+    }
+
+    .innerText svg{
+        height: 50px;
+        width: 50px;
+    }
+
+    .viewMore Button{
+        height: 60px;
+    }
+}
